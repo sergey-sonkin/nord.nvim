@@ -159,6 +159,8 @@ function treesitter.highlights()
     ["@lsp.type.namespace"] = { link = "@namespace" },
     ["@lsp.type.parameter"] = { link = "@parameter" },
     ["@lsp.type.property"] = { link = "@property" },
+    ["@lsp.type.selfKeyword"] = { link = "@keyword" },
+    ["@lsp.type.selfTypeKeyword"] = { link = "@keyword" },
     ["@lsp.type.struct"] = { link = "@structure" },
     ["@lsp.type.typeParameter"] = { link = "@parameter" },
     ["@lsp.type.variable"] = {}, -- use treesitter styles for regular variables
