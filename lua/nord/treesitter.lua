@@ -146,6 +146,9 @@ function treesitter.highlights()
     ["@text.phpdoc"] = { fg = c.polar_night.light },
     ["@attribute.phpdoc"] = { fg = c.frost.artic_water },
 
+    ["@lsp.type.selfKeyword"] = { fg = c.frost.artic_ocean },
+    ["@lsp.type.selfTypeKeyword"] = { fg = c.frost.artic_ocean },
+
     -- LSP Semantic Token Groups
     ["@lsp.type.class"] = { link = "@type" },
     ["@lsp.type.comment"] = { link = "@comment" },
@@ -159,8 +162,6 @@ function treesitter.highlights()
     ["@lsp.type.namespace"] = { link = "@namespace" },
     ["@lsp.type.parameter"] = { link = "@parameter" },
     ["@lsp.type.property"] = { link = "@property" },
-    ["@lsp.type.selfKeyword"] = { link = "@keyword" },
-    ["@lsp.type.selfTypeKeyword"] = { link = "@keyword" },
     ["@lsp.type.struct"] = { link = "@structure" },
     ["@lsp.type.typeParameter"] = { link = "@parameter" },
     ["@lsp.type.variable"] = {}, -- use treesitter styles for regular variables
