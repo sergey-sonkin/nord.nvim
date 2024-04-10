@@ -83,12 +83,13 @@ function treesitter.highlights()
     ["@variable"] = vim.tbl_extend("force", { fg = c.snow_storm.origin }, options.styles.variables), --  various variable names
     ["@variable.builtin"] = { fg = c.frost.artic_water },                                            --  built-in variable names (e.g. `this`)
     ["@constant"] = { fg = c.snow_storm.origin },                                                    --  constant identifiers
-    ["@constant.builtin"] = { fg = c.frost.artic_water },                                            --  built-in constant values
-    ["@constant.macro"] = { fg = c.frost.artic_water },                                              --  constants defined by the preprocessor
-    ["@module"] = { fg = c.snow_storm.origin },                                                      --  modules or namespaces
-    ["@namespace"] = { link = "@module" },                                                           -- @deprecated
-    ["@string.special.symbol"] = { fg = c.snow_storm.origin },                                       --  symbols or atoms
-    ["@symbol"] = { link = "@string.special.symbol" },                                               -- @deprecated
+    -- ["@constant.builtin"] = { fg = c.frost.artic_water },                                            --  built-in constant values
+    ["@constant.builtin"] = { fg = c.frost.artic_ocean },
+    ["@constant.macro"] = { fg = c.frost.artic_water },        --  constants defined by the preprocessor
+    ["@module"] = { fg = c.snow_storm.origin },                --  modules or namespaces
+    ["@namespace"] = { link = "@module" },                     -- @deprecated
+    ["@string.special.symbol"] = { fg = c.snow_storm.origin }, --  symbols or atoms
+    ["@symbol"] = { link = "@string.special.symbol" },         -- @deprecated
 
     -- Text
     ["@text"] = { fg = c.snow_storm.origin },                                              -- @deprecated
