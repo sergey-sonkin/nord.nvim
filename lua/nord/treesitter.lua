@@ -81,7 +81,8 @@ function treesitter.highlights()
 
     -- Identifiers
     ["@variable"] = vim.tbl_extend("force", { fg = c.snow_storm.origin }, options.styles.variables), --  various variable names
-    ["@variable.builtin"] = { fg = c.frost.artic_water },                                            --  built-in variable names (e.g. `this`)
+    -- ["@variable.builtin"] = { fg = c.frost.artic_water },                                            --  built-in variable names (e.g. `this`)
+    ["@variable.builtin"] = { fg = c.frost.artic_ocean },                                            --  built-in variable names (e.g. `this`)
     ["@constant"] = { fg = c.snow_storm.origin },                                                    --  constant identifiers
     -- ["@constant.builtin"] = { fg = c.frost.artic_water },                                            --  built-in constant values
     ["@constant.builtin"] = { fg = c.frost.artic_ocean },
