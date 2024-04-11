@@ -18,10 +18,10 @@ function treesitter.highlights()
     ["@operator"] = { fg = c.frost.artic_water },                                                  --  symbolic operators (e.g. `+` / `*`)
 
     -- Punctuation
-    ["@punctuation.delimiter"] = { fg = c.snow_storm.brightest }, --  delimiters (e.g. `;` / `.` / `,`)
-    ["@punctuation.bracket"] = { fg = c.snow_storm.brightest },
-    ["@markup.list"] = { fg = c.frost.artic_water },              --  special symbols (e.g. `{}` in string interpolation)
-    ["@punctuation.special"] = { link = "@markup.list" },         -- @deprecated
+    ["@punctuation.delimiter"] = { fg = c.snow_storm.origin }, --  delimiters (e.g. `;` / `.` / `,`)
+    ["@punctuation.bracket"] = { fg = c.snow_storm.origin },
+    ["@markup.list"] = { fg = c.frost.artic_water },           --  special symbols (e.g. `{}` in string interpolation)
+    ["@punctuation.special"] = { link = "@markup.list" },      -- @deprecated
 
     -- Literals
     ["@string"] = { fg = c.aurora.green },                 --  string literals
