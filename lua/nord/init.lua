@@ -21,7 +21,7 @@ function nord.load(opts)
   utils.load(
     require("nord.defaults").highlights(),
     require("nord.lsp").highlights(),
-    require("nord.syntax").highlights(),
+    require("nord.syntax").highlights()
   -- require("nord.terminal").highlights(),
   -- require("nord.treesitter").highlights(),
   -- require("nord.plugins.bufferline").highlights(),
