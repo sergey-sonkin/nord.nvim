@@ -74,23 +74,21 @@ function treesitter.highlights()
     ["@type.qualifier"] = { fg = c.frost.artic_water },  --  type qualifiers (e.g. `const`)
     ["@keyword.storage"] = { fg = c.frost.artic_water }, --  visibility/life-time modifiers
     ["@storageclass"] = { link = "@keyword.storage" },   -- @deprecated
-    ["@attribute"] = { fg = c.snow_storm.origin },       --  attribute annotations (e.g. Python decorators)
+    ["@attribute"] = { fg = c.frost_artic_water },
     ["@variable.member"] = { fg = c.snow_storm.origin }, --  object and struct fields
     ["@field"] = { link = "@field" },                    -- @deprecated
     ["@property"] = { fg = c.snow_storm.origin },        --  similar to `@field`
 
     -- Identifiers
     ["@variable"] = vim.tbl_extend("force", { fg = c.snow_storm.origin }, options.styles.variables), --  various variable names
-    -- ["@variable.builtin"] = { fg = c.frost.artic_water },                                            --  built-in variable names (e.g. `this`)
-    ["@variable.builtin"] = { fg = c.frost.artic_ocean },                                            --  built-in variable names (e.g. `this`)
+    ["@variable.builtin"] = { fg = c.frost.artic_water },                                            --  built-in variable names (e.g. `this`)
     ["@constant"] = { fg = c.snow_storm.origin },                                                    --  constant identifiers
-    -- ["@constant.builtin"] = { fg = c.frost.artic_water },                                            --  built-in constant values
-    ["@constant.builtin"] = { fg = c.frost.artic_ocean },
-    ["@constant.macro"] = { fg = c.frost.artic_water },        --  constants defined by the preprocessor
-    ["@module"] = { fg = c.snow_storm.origin },                --  modules or namespaces
-    ["@namespace"] = { link = "@module" },                     -- @deprecated
-    ["@string.special.symbol"] = { fg = c.snow_storm.origin }, --  symbols or atoms
-    ["@symbol"] = { link = "@string.special.symbol" },         -- @deprecated
+    ["@constant.builtin"] = { fg = c.frost.artic_water },
+    ["@constant.macro"] = { fg = c.frost.artic_water },                                              --  constants defined by the preprocessor
+    ["@module"] = { fg = c.snow_storm.origin },                                                      --  modules or namespaces
+    ["@namespace"] = { link = "@module" },                                                           -- @deprecated
+    ["@string.special.symbol"] = { fg = c.snow_storm.origin },                                       --  symbols or atoms
+    ["@symbol"] = { link = "@string.special.symbol" },                                               -- @deprecated
 
     -- Text
     ["@text"] = { fg = c.snow_storm.origin },                                              -- @deprecated
@@ -148,8 +146,8 @@ function treesitter.highlights()
     ["@text.phpdoc"] = { fg = c.polar_night.light },
     ["@attribute.phpdoc"] = { fg = c.frost.artic_water },
 
-    ["@lsp.type.selfKeyword"] = { fg = c.frost.artic_ocean },
-    ["@lsp.type.selfTypeKeyword"] = { fg = c.frost.artic_ocean },
+    ["@lsp.type.selfKeyword"] = { fg = c.frost.artic_water },
+    ["@lsp.type.selfTypeKeyword"] = { fg = c.frost.artic_water },
 
     -- LSP Semantic Token Groups
     ["@lsp.type.class"] = { link = "@type" },
