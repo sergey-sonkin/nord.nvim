@@ -47,7 +47,7 @@ function treesitter.highlights()
     ["@function.method.call"] = { fg = c.frost.ice },                                        --  method calls
     ["@method.call"] = { link = "@function.method.call" },                                   -- @deprecated
     ["@constructor"] = { fg = c.frost.ice },                                                 --  constructor calls and definitions
-    ["@variable.parameter"] = { fg = c.snow_storm.origin },                                  --  parameters of a function
+    ["@variable.parameter"] = { fg = c.aurora.yellow },                                      --  parameters of a function
     -- ["@variable.parameter"] = { fg = c.frost.ice },                                          --  parameters of a function
     ["@parameter"] = { link = "@variable.parameter" },                                       -- @deprecated
 
