@@ -37,16 +37,6 @@ function nord.load(opts)
     require("nord.plugins.glance").highlights(),
     require("nord.plugins.mini").highlights()
   )
-  vim.api.nvim_create_autocmd("LspTokenUpdate", {
-    callback = function(args)
-      local token = args.data.token
-      if token.type == "decorator" and token.type == "function" then
-        vim.lsp.semantic_tokens.highlight_token(
-          token, args.buf, args.data.client_id, "@lsp.type.function")
-      end
-    end,
-  })
-
 
   vim.g.colors_name = "nord"
 end
