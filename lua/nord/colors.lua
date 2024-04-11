@@ -31,38 +31,38 @@ local defaults = {
 colors.palette = defaults
 colors.default_bg = "#2E3440" -- nord0
 
--- if vim.o.background == "light" then
---   defaults = {
---     polar_night = {
---       origin = "#fdf6e3",    -- nord0// base3
---       bright = "#eee8d5",    -- nord1// base2
---       brighter = "#93a1a1",  -- nord2// base1
---       brightest = "#073642", -- nord1/base 0
---       light = "#073642",     -- out of palette// nord1
---     },
---     snow_storm = {
---       origin = "#073642",    -- nord4 (most common color, least bright) // (most common color, least dark base02
---       brighter = "#586e75",  -- nord5 // base01
---       brightest = "#657b83", -- nord6 // base00
---     },
---     frost = {
---       polar_water = "#2aa198", -- cyan
---       ice = "#268bd2",         -- blue
---       artic_water = "#002b36", -- base03
---       artic_ocean = "#002b36", -- base03
---     },
---     aurora = {
---       red = "#dc322f",    -- red
---       orange = "#cb4b16", -- orange
---       yellow = "#859900",  -- green
---       green = "#b58900", -- yellow
---       purple = "#6c71c4", -- violet
---     },
---     none = "NONE",
---   }
---   colors.palette = defaults
---   colors.default_bg = "#fdf6e3" -- nord0
--- end
+if vim.o.background == "light" then
+  defaults = {
+    polar_night = {
+      origin = "#fdf6e3",    -- nord0// base3
+      bright = "#eee8d5",    -- nord1// base2
+      brighter = "#93a1a1",  -- nord2// base1
+      brightest = "#073642", -- nord1/base 0
+      light = "#073642",     -- out of palette// nord1
+    },
+    snow_storm = {
+      origin = "#073642",    -- nord4 (most common color, least bright) // (most common color, least dark base02
+      brighter = "#586e75",  -- nord5 // base01
+      brightest = "#657b83", -- nord6 // base00
+    },
+    frost = {
+      polar_water = "#2aa198", -- cyan
+      ice = "#268bd2",         -- blue
+      artic_water = "#586e75", -- base03
+      artic_ocean = "#002b36", -- base03
+    },
+    aurora = {
+      red = "#dc322f",    -- red
+      orange = "#cb4b16", -- orange
+      yellow = "#859900", -- green
+      green = "#b58900",  -- yellow
+      purple = "#6c71c4", -- violet
+    },
+    none = "NONE",
+  }
+  colors.palette = defaults
+  colors.default_bg = "#fdf6e3" -- nord0
+end
 
 
 function colors.daltonize(severity)
