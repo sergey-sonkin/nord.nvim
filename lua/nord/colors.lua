@@ -54,8 +54,8 @@ colors.default_bg = "#2E3440" -- nord0
 --     aurora = {
 --       red = "#dc322f",    -- red
 --       orange = "#cb4b16", -- orange
---       yellow = "#b58900", -- yellow
---       green = "#859900",  -- green
+--       yellow = "#859900",  -- green
+--       green = "#b58900", -- yellow
 --       purple = "#6c71c4", -- violet
 --     },
 --     none = "NONE",

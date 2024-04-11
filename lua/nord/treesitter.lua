@@ -20,7 +20,8 @@ function treesitter.highlights()
     -- Punctuation
     -- ["@punctuation.delimiter"] = { fg = c.snow_storm.origin }, --  delimiters (e.g. `;` / `.` / `,`)
     ["@punctuation.delimiter"] = { fg = c.frost.artic_water },
-    ["@punctuation.bracket"] = { fg = c.snow_storm.origin },
+    -- ["@punctuation.bracket"] = { fg = c.snow_storm.origin },
+    ["@punctuation.bracket"] = { fg = c.snow_storm.brighest },
     ["@markup.list"] = { fg = c.frost.artic_water },      --  special symbols (e.g. `{}` in string interpolation)
     ["@punctuation.special"] = { link = "@markup.list" }, -- @deprecated
 
@@ -47,10 +48,11 @@ function treesitter.highlights()
     ["@method"] = { link = "@function.method" },                                             -- @deprecated
     ["@function.method.call"] = { fg = c.frost.ice },                                        --  method calls
     ["@method.call"] = { link = "@function.method.call" },                                   -- @deprecated
-    ["@constructor"] = { fg = c.frost.ice },                                                 --  constructor calls and definitions
-    ["@variable.parameter"] = { fg = c.snow_storm.origin },                                  --  parameters of a function
+    -- ["@constructor"] = { fg = c.frost.ice },                                                 --  constructor calls and definitions
+    ["@constructor"] = { fg = c.snow_storm.brighest },
+    ["@variable.parameter"] = { fg = c.snow_storm.origin }, --  parameters of a function
     -- ["@variable.parameter"] = { fg = c.frost.ice },                                          --  parameters of a function
-    ["@parameter"] = { link = "@variable.parameter" },                                       -- @deprecated
+    ["@parameter"] = { link = "@variable.parameter" },      -- @deprecated
 
     -- Keywords
     ["@keyword"] = vim.tbl_extend("force", { fg = c.frost.artic_water }, options.styles.keywords),             --  various keywords
