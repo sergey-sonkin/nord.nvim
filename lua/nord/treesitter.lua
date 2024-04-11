@@ -74,7 +74,7 @@ function treesitter.highlights()
     ["@type.qualifier"] = { fg = c.frost.artic_water },  --  type qualifiers (e.g. `const`)
     ["@keyword.storage"] = { fg = c.frost.artic_water }, --  visibility/life-time modifiers
     ["@storageclass"] = { link = "@keyword.storage" },   -- @deprecated
-    ["@attribute"] = { fg = c.frost_artic_water },
+    ["@attribute"] = { fg = c.aurora.orange },
     ["@variable.member"] = { fg = c.snow_storm.origin }, --  object and struct fields
     ["@field"] = { link = "@field" },                    -- @deprecated
     ["@property"] = { fg = c.snow_storm.origin },        --  similar to `@field`
