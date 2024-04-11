@@ -48,15 +48,15 @@ if vim.o.background == "light" then
     frost = {
       polar_water = "#2aa198", -- cyan
       ice = "#268bd2",         -- blue
-      artic_water = "#586e75", -- base03
+      artic_water = "#002b36", -- base03
       artic_ocean = "#002b36", -- base03
     },
     aurora = {
       red = "#dc322f",    -- red
       orange = "#cb4b16", -- orange
-      yellow = "#859900", -- green
-      green = "#b58900",  -- yellow
-      purple = "#6c71c4", -- violet
+      yellow = "#b58900", -- green
+      green = "#859900",  -- yellow
+      purple = "#d33682", -- magenta
     },
     none = "NONE",
   }
