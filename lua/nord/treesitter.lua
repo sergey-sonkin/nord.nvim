@@ -34,7 +34,8 @@ function treesitter.highlights()
     ["@string.special"] = { link = "@markup.link.label" }, -- @deprecated
     ["@character"] = { fg = c.aurora.green },              --  character literals
     ["@character.special"] = { fg = c.aurora.yellow },     --  special characters (e.g. wildcards)
-    ["@boolean"] = { fg = c.frost.artic_water },           --  boolean literals
+    -- ["@boolean"] = { fg = c.frost.artic_water },           --  boolean literals
+    ["@boolean"] = { fg = c.aurora.purple },               -- controversial take
     ["@number"] = { fg = c.aurora.purple },                --  numeric literals
     ["@number.float"] = { fg = c.aurora.purple },          --  floating-point number literals
     ["@float"] = { link = "@number.float" },               -- @deprecated
