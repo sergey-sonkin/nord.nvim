@@ -1,9 +1,9 @@
 local c = require("nord.colors").palette
 local utils = require("nord.utils")
 
-local defaluts = {}
+local defaults = {}
 
-function defaluts.highlights()
+function defaults.highlights()
   local options = require("nord.config").options
   local global_bg = utils.make_global_bg()
 
@@ -84,4 +84,4 @@ function defaluts.highlights()
   }
 end
 
-return defaluts
+return defaults
