@@ -13,7 +13,7 @@ function defaults.highlights()
     Cursor = { fg = c.snow_storm.origin, bg = c.none, reverse = true }, -- the character under the cursor
     CursorIM = { fg = c.snow_storm.brighter, bg = c.none, reverse = true }, -- like Cursor, but used when in IME mode
     CursorColumn = { bg = c.polar_night.bright }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine = { bg = c.polar_night.bright }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine = { bg = c.polar_night.brighter }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory = { fg = c.frost.ice }, -- directory names (and other special names in listings)
     EndOfBuffer = { fg = c.polar_night.bright }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     ErrorMsg = { fg = c.snow_storm.origin, bg = c.aurora.red }, -- error messages on the command line
