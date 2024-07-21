@@ -89,7 +89,8 @@ function treesitter.highlights()
     ["@variable.builtin"] = { fg = c.frost.artic_water }, --  built-in variable names (e.g. `this`)
     ["@variable.builtin.python"] = { fg = c.frost.origin }, --  "self" will render as variable
     ["@constant"] = { fg = c.snow_storm.origin }, --  constant identifiers
-    ["@constant.builtin"] = { fg = c.frost.artic_water },
+    -- ["@constant.builtin"] = { fg = c.frost.artic_water },
+    ["@constant.builtin"] = { fg = c.aurora.purple },
     ["@constant.macro"] = { fg = c.frost.artic_water }, --  constants defined by the preprocessor
     ["@module"] = { fg = c.snow_storm.origin }, --  modules or namespaces
     ["@namespace"] = { link = "@module" }, -- @deprecated
