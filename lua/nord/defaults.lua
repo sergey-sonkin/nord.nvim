@@ -49,7 +49,8 @@ function defaults.highlights()
     -- IncSearch = options.search.theme == "vscode" and { fg = c.snow_storm.origin, bg = utils.darken(c.frost.ice, 0.5) }
     --   or { fg = c.snow_storm.brightest, bg = c.frost.ice }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     IncSearch = options.search.theme == "vscode" and { fg = c.snow_storm.origin, bg = utils.darken(c.frost.ice, 0.5) }
-      or { fg = c.snow_storm.brightest, bg = c.aurora.orange }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+      -- or { fg = c.snow_storm.brightest, bg = c.aurora.orange }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+      or { fg = c.none, bg = c.aurora.yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch = { link = "IncSearch" },
     SpecialKey = { fg = c.polar_night.brightest }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad = { sp = c.aurora.red, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
