@@ -33,7 +33,7 @@ function defaults.highlights()
     MsgArea = {}, -- Area for messages and cmdline
     MsgSeparator = {}, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg = { fg = c.frost.ice }, -- |more-prompt|
-    NonText = { fg = c.polar_night.brighter }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    NonText = { fg = c.polar_night.brightest }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(true) }, -- normal text
     -- NormalFloat = { fg = c.snow_storm.origin, bg = global_bg }, -- Normal text in floating windows.
     NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Normal text in floating windows.
@@ -66,7 +66,7 @@ function defaults.highlights()
     Visual = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection
     VisualNOS = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg = { fg = c.polar_night.origin, bg = c.aurora.yellow }, -- warning messages
-    Whitespace = { fg = c.polar_night.brighter }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
+    Whitespace = { fg = c.polar_night.brightest }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu = { fg = c.frost.ice, bg = c.polar_night.bright }, -- current match in 'wildmenu' completion
     qfLineNr = { fg = c.frost.artic_water },
     qfFileName = { fg = c.frost.ice },
