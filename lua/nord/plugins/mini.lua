@@ -6,7 +6,7 @@ function mini.highlights()
   return {
     MiniIndentscopeSymbol = { fg = c.frost.artic_ocean },
     MiniIndentscopePrefix = { nocombine = true },
-    MiniPickNormal = { link = "Normal" },
+    MiniPickNormal = { fg = c.snow_storm.origin, bg = c.polar_night.origin },
   }
 end
 
