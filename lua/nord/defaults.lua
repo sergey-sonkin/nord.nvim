@@ -37,7 +37,8 @@ function defaults.highlights()
     NonText = { fg = c.polar_night.brightest }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(true) }, -- normal text
     -- NormalFloat = { fg = c.snow_storm.origin, bg = global_bg }, -- Normal text in floating windows.
-    NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Normal text in floating windows.
+    -- NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Normal text in floating windows.
+    NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Normal text in floating windows.
     FloatBorder = { fg = c.polar_night.brightest, bg = global_bg }, -- Borders of floating windows
     Pmenu = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Popup menu: normal item.
     PmenuSel = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: selected item.
