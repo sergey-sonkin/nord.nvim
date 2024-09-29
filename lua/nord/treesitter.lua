@@ -152,6 +152,7 @@ function treesitter.highlights()
     ["@property.yaml"] = { fg = c.frost.polar_water },
     ["@text.phpdoc"] = { fg = c.polar_night.light },
     ["@attribute.phpdoc"] = { fg = c.frost.artic_water },
+    ["@character.printf"] = { fg = c.aurora.yellow },
 
     ["@lsp.type.selfKeyword"] = { fg = c.frost.artic_water },
     ["@lsp.type.selfTypeKeyword"] = { fg = c.frost.artic_water },
