@@ -27,16 +27,16 @@ function nord.load(opts)
     require("nord.treesitter").highlights(),
     require("nord.plugins.git").highlights(),
     require("nord.plugins.bufferline").highlights(),
-    require("nord.plugins.completion").highlights()
+    require("nord.plugins.completion").highlights(),
 
     -- require("nord.plugins.filetree").highlights(),
     -- require("nord.plugins.motion").highlights(),
     -- require("nord.plugins.notify").highlights(),
     -- require("nord.plugins.ui").highlights(),
-    -- require("nord.plugins.diffview").highlights(),
-    -- require("nord.plugins.neogit").highlights(),
+    require("nord.plugins.diffview").highlights(),
+    require("nord.plugins.neogit").highlights(),
     -- require("nord.plugins.glance").highlights(),
-    -- require("nord.plugins.mini").highlights()
+    require("nord.plugins.mini").highlights()
   )
 
   vim.g.colors_name = "nord"
