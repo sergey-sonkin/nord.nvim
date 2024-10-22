@@ -37,8 +37,8 @@ function defaults.highlights()
     NonText = { fg = c.polar_night.brightest }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(true) }, -- normal text
     -- NormalFloat = { fg = c.snow_storm.origin, bg = global_bg }, -- Normal text in floating windows.
-    -- NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Normal text in floating windows.
-    NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Normal text in floating windows.
+    NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Normal text in floating windows.
+    -- NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Normal text in floating windows.
     FloatBorder = { fg = c.polar_night.brightest, bg = global_bg }, -- Borders of floating windows
     Pmenu = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Popup menu: normal item.
     PmenuSel = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: selected item.
@@ -59,7 +59,7 @@ function defaults.highlights()
     SpellCap = { sp = c.aurora.yellow, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal = { sp = c.snow_storm.brighter, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare = { fg = c.snow_storm.brightest, bg = global_bg, sp = c.snow_storm.brightest, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-    StatusLine = { fg = c.frost.ice, bg = c.polar_night.brightest }, -- status line of current window
+    StatusLine = { fg = c.frost.ice, bg = c.polar_night.brighter }, -- status line of current window
     StatusLineNC = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLineSel = { fg = c.snow_storm.origin, bg = c.fg_gutter }, -- tab pages line, not active tab page label
     TabLineFill = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- tab pages line, where there are no labels
